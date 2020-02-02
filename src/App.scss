@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@font-face {
+  font-family: "ChopinScript";
+  src: url(../Font/ChopinScript.ttf);
+}
+
+$font-color: #d43b28;
+$font-color-sub: #b23122;
+$font-color-text: #142715;
+
+.container {
+  background: #fff;
+  border-radius: 2%;
+  font-size: 2rem;
+  margin-top: 6rem;
+}
+
+.header {
+  font-size: 18px;
+  margin: 2rem;
+  text-align: center;
+  & > h2 {
+    color: $font-color;
+    font-size: 5rem;
+    font-family: "ChopinScript";
+    font-weight: 200;
+  }
+  & > h3 {
+    color: $font-color-sub;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+  }
+}
+
+.printed-list {
+  box-shadow: none;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 2rem;
+  padding: 1rem;
+  & > div {
+    color: $font-color-text;
+    padding: 0.5rem 1rem 0.25rem;
+  }
+  .task {
+    align-items: center;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-between;
+  }
+}
+
+.task-list {
+  background-image: url(../background.jpg);
+  background-size: cover;
+  color: $font-color-text;
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-group {
+  align-items: center;
+  display: flex;
+  width: 27rem;
+  &--clear-btn {
+    justify-content: flex-end;
+    margin: 2rem 0;
+  }
+  &--add-btn {
+    background: #295425;
+    color: white;
+    margin: 2rem 0;
+  }
+}
+
+.form {
+  width: 100%;
+  &--button {
+    justify-content: flex-end;
+  }
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+}
