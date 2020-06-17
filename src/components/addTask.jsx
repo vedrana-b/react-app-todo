@@ -78,7 +78,7 @@ class AddTask extends Component {
             <FormGroup className="form-group">
               <ControlLabel>Priority</ControlLabel>
               <FormControl
-                type="text"
+                type="number"
                 onChange={this.updateInputPriority}
                 placeholder="Enter number"
                 onKeyUp={this.updateOnEnter}
